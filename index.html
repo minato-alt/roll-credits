@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0909" />
+  <title>The KM — Season 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Decorative tulips -->
+  <div class="floral floral-left" aria-hidden="true">
+    <svg viewBox="0 0 220 500" role="presentation">
+      <path class="stem" d="M105 500 C105 390 92 290 106 190" />
+      <path class="leaf" d="M104 340 C64 326 31 291 24 248 C67 257 99 283 106 320 Z" />
+      <path class="stem" d="M125 500 C130 395 153 295 139 105" />
+      <path class="leaf" d="M137 285 C171 260 197 220 200 177 C165 187 143 215 137 253 Z" />
+      <path class="tulip" d="M139 111 C119 92 113 63 126 36 C135 55 146 61 157 36 C169 66 160 94 139 111 Z" />
+      <path class="tulip-inner" d="M139 110 C131 91 133 69 139 55 C145 69 148 90 139 110 Z" />
+      <path class="stem" d="M79 500 C80 410 59 346 55 276" />
+      <path class="tulip" d="M55 280 C36 262 31 236 42 213 C50 229 60 232 68 211 C80 238 72 263 55 280 Z" />
+    </svg>
+  </div>
+
+  <div class="floral floral-right" aria-hidden="true">
+    <svg viewBox="0 0 220 500" role="presentation">
+      <path class="stem" d="M120 500 C118 390 137 300 119 184" />
+      <path class="leaf" d="M120 360 C155 338 190 302 197 263 C157 270 127 299 119 333 Z" />
+      <path class="leaf" d="M121 303 C83 284 48 249 42 211 C82 220 109 247 120 278 Z" />
+      <path class="tulip" d="M119 192 C98 174 94 143 107 116 C117 136 127 137 139 114 C151 144 141 174 119 192 Z" />
+      <path class="tulip-inner" d="M119 190 C112 170 114 148 119 136 C126 151 128 172 119 190 Z" />
+      <path class="stem" d="M145 500 C151 411 172 352 171 299" />
+      <path class="tulip" d="M171 301 C154 286 151 261 162 241 C169 255 178 256 186 239 C197 263 190 287 171 301 Z" />
+    </svg>
+  </div>
+
+  <main id="app">
+    <!-- Scene 1 -->
+    <section class="scene active" id="opening">
+      <div class="eyebrow">THE KM · SEASON 1</div>
+      <div class="episode">06 / 06</div>
+      <h1>To Be<br><em>Continued</em></h1>
+      <p class="subtitle">the final scene</p>
+
+      <div class="progress-wrap" aria-hidden="true">
+        <div class="progress-bar"><span id="loadingBar"></span></div>
+        <span id="loadingText">LOADING SEASON FINALE</span>
+      </div>
+
+      <button class="primary-btn" id="playBtn" disabled>
+        <span class="play-icon">▶</span>
+        <span>PLAY</span>
+      </button>
+    </section>
+
+    <!-- Scene 2 -->
+    <section class="scene" id="credits">
+      <div class="credit-stage">
+        <div class="credit-block" data-credit>
+          <span class="credit-label">A SIX-MONTH PRODUCTION</span>
+          <h2>The KM</h2>
+        </div>
+
+        <div class="credit-block" data-credit>
+          <span class="credit-label">STARRING</span>
+          <h2>You and Me</h2>
+        </div>
+
+        <div class="credit-block" data-credit>
+          <span class="credit-label">CO-STARRING</span>
+          <h2>Cutu baby and Golu baby</h2>
+        </div>
+
+        <div class="credit-block" data-credit>
+          <span class="credit-label">FILMED ACROSS</span>
+          <h2>Discord · Reddit · Telegram · WhatsApp</h2>
+        </div>
+
+        <div class="credit-block" data-credit>
+          <span class="credit-label">GENRE</span>
+          <h2>Tons and tons of cuteness</h2>
+        </div>
+
+        <div class="credit-block" data-credit>
+          <span class="credit-label">RUNTIME</span>
+          <h2>6 months and counting.</h2>
+        </div>
+
+        <div class="credit-block" data-credit>
+          <span class="credit-label">STATUS</span>
+          <h2>Ongoing.</h2>
+        </div>
+      </div>
+
+      <button class="skip-btn" id="skipCredits">SKIP CREDITS</button>
+    </section>
+
+    <!-- Scene 3 -->
+    <section class="scene" id="reveal">
+      <div class="reveal-content">
+        <div class="tiny-flame" aria-hidden="true"></div>
+        <span class="credit-label">06 / 06</span>
+        <p class="pre-title">before the credits roll...</p>
+        <h2>There's one<br><em>last thing.</em></h2>
+        <div class="divider"></div>
+        <p class="letter-kicker">A LETTER WITH NO LABEL</p>
+        <p class="take-time">Take your time with this one.</p>
+        <button class="primary-btn open-btn" id="openLetter">
+          <span>OPEN FINAL SCENE</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Scene 4 -->
+    <section class="scene" id="ending">
+      <div class="ending-content">
+        <div class="eyebrow">THE KM · SEASON 1</div>
+        <h2>Thank you<br><em>for watching.</em></h2>
+        <div class="divider"></div>
+        <p>06 / 06</p>
+        <p class="status">END OF SEASON 1</p>
+        <span class="continue">...for now.</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="sound-toggle" id="soundToggle" title="Toggle ambience" aria-label="Toggle ambience">♪</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
